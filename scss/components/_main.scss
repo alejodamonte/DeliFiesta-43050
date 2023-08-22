@@ -19,7 +19,7 @@ main{
             }
             a{
                 font-family: 'Cormorant Garamond', serif;
-                font-size: $font-size-parrafos;
+                font-size: nth($font-size , 2 );
                 font-weight: 500;
                 font-style: italic;
                 background-color: rgba(255, 255, 255, 0.623);
@@ -54,7 +54,7 @@ main{
             }
             .centrado{
                 font-family: 'Cormorant Garamond', serif;
-                font-size: $font-size-parrafos;
+                font-size: nth($font-size , 3 );
                 font-weight: 400;
                 padding: 20px;
             }
@@ -70,13 +70,13 @@ main{
                         h3{
                             background-color: #9b969e;
                             font-family: 'Noto Serif', serif;
-                            font-size: $font-size-titulos-secundarios;
+                            font-size: nth($font-size , 2 );
                             font-style: italic;
                             font-weight: 400;
                         }
                         p{
                             font-family: 'Caveat', cursive;
-                            font-size: $font-size-parrafos;
+                            font-size: nth($font-size , 3 );
                             font-weight: 600;
                         }
                     }

@@ -1,0 +1,77 @@
+main{
+    .titulos{
+        font-size: 100px;
+    }
+    .salon-belgrano{
+        background-color: $bg-color-section;
+        margin: $margen-section;
+        border: 3px $borde-color solid;
+        h2{
+            text-align: center;
+        }
+        div{
+            p{
+                margin: 20px;
+            }
+            .salon-belgrano-contenedor{
+                margin: 20px;
+                @extend %grid-salones;
+                gap: 20px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border: 3px $borde-color solid;
+                }
+            }
+        }
+    }
+    .salon-palermo{
+        background-color: $bg-color-section;
+        margin: $margen-section;
+        border: 3px $borde-color solid;
+        h2{
+            text-align: center;
+        }
+        div{
+            p{
+                margin: 20px;
+            }
+            .salon-palermo-contenedor{
+                margin: 20px;
+                @extend %grid-salones;
+                gap: 20px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border: 3px $borde-color solid;
+                }
+            }
+        }
+    }
+    .salon-tigre{
+        background-color: $bg-color-section;
+        margin: $margen-section;
+        border: 3px $borde-color solid;
+        h2{
+            text-align: center;
+        }
+        div{
+            p{
+                margin: 20px;
+            }
+            .salon-tigre-contenedor{
+                margin: 20px;
+                @extend %grid-salones;
+                gap: 20px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border: 3px $borde-color solid;
+                }
+            }
+        }
+    }
+}

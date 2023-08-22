@@ -38,6 +38,29 @@
             }
         }
     }
+    main{
+        .salon-belgrano{
+            div{
+                .salon-belgrano-contenedor{
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+        .salon-palermo{
+            div{
+                .salon-palermo-contenedor{
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+        .salon-tigre{
+            div{
+                .salon-tigre-contenedor{
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width:900px) {
     main{
@@ -50,6 +73,36 @@
             }
             .galeria-contenedor-2{
                 grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+    main{
+        .experiencias{
+            .columnas{
+                flex-direction: column;
+            }
+        }
+    }
+    main{
+        .salon-belgrano{
+            div{
+                .salon-belgrano-contenedor{
+                    grid-template-columns:  1fr;
+                }
+            }
+        }
+        .salon-palermo{
+            div{
+                .salon-palermo-contenedor{
+                    grid-template-columns:  1fr;
+                }
+            }
+        }
+        .salon-tigre{
+            div{
+                .salon-tigre-contenedor{
+                    grid-template-columns:  1fr;
+                }
             }
         }
     }
@@ -83,13 +136,6 @@
             }
         }
     }
-    main{
-        .experiencias{
-            .columnas{
-                flex-direction: column;
-            }
-        }
-    }
 }
 @media screen and (max-width:500px) {
     main{
@@ -97,6 +143,9 @@
             .titulos{
                 padding: 20px;
                 font-size: 50px
+            }
+            a{
+                font-size: nth($font-size, 3);
             }
         }
         .servicio{

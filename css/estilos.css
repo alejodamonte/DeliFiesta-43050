@@ -1,7 +1,12 @@
 /*------------   Colores   ------------*/
 /*------------------------*/
-/*------------   FUENTES   ------------*/
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Dancing+Script:wght@400;500;600;700&family=Noto+Serif:ital,wght@1,400;1,500&display=swap");
+main .salon-belgrano div .salon-belgrano-contenedor, main .salon-palermo div .salon-palermo-contenedor, main .salon-tigre div .salon-tigre-contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px; }
+
+/*------------   FUENTES   ------------*/
 /*------------   RESET   ------------*/
 * {
   margin: 0;
@@ -21,7 +26,7 @@ body ul {
 /*------------   TIPOGRAFIAS GENERALES   ------------*/
 .titulos-secundarios {
   font-family: 'Dancing Script', cursive;
-  font-size: 35px;
+  font-size: 70px;
   font-weight: 700;
   color: black; }
 
@@ -82,7 +87,7 @@ main .hero {
     color: black; }
   main .hero a {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 500;
     font-style: italic;
     background-color: rgba(255, 255, 255, 0.623);
@@ -262,6 +267,60 @@ header .navbar {
     align-items: end;
     margin: 10px; }
 
+main .titulos {
+  font-size: 100px; }
+
+main .salon-belgrano {
+  background-color: #cdc5b4;
+  margin: 40px;
+  border: 3px black solid; }
+  main .salon-belgrano h2 {
+    text-align: center; }
+  main .salon-belgrano div p {
+    margin: 20px; }
+  main .salon-belgrano div .salon-belgrano-contenedor {
+    margin: 20px;
+    gap: 20px; }
+    main .salon-belgrano div .salon-belgrano-contenedor img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 3px black solid; }
+
+main .salon-palermo {
+  background-color: #cdc5b4;
+  margin: 40px;
+  border: 3px black solid; }
+  main .salon-palermo h2 {
+    text-align: center; }
+  main .salon-palermo div p {
+    margin: 20px; }
+  main .salon-palermo div .salon-palermo-contenedor {
+    margin: 20px;
+    gap: 20px; }
+    main .salon-palermo div .salon-palermo-contenedor img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 3px black solid; }
+
+main .salon-tigre {
+  background-color: #cdc5b4;
+  margin: 40px;
+  border: 3px black solid; }
+  main .salon-tigre h2 {
+    text-align: center; }
+  main .salon-tigre div p {
+    margin: 20px; }
+  main .salon-tigre div .salon-tigre-contenedor {
+    margin: 20px;
+    gap: 20px; }
+    main .salon-tigre div .salon-tigre-contenedor img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 3px black solid; }
+
 @media screen and (max-width: 1400px) {
   main .servicio {
     flex-direction: column; }
@@ -284,7 +343,13 @@ header .navbar {
     grid-column: span 1; }
   main .galeria .galeria-contenedor-2 .img-2-3 {
     grid-row: span 1;
-    grid-column: span 1; } }
+    grid-column: span 1; }
+  main .salon-belgrano div .salon-belgrano-contenedor {
+    grid-template-columns: repeat(2, 1fr); }
+  main .salon-palermo div .salon-palermo-contenedor {
+    grid-template-columns: repeat(2, 1fr); }
+  main .salon-tigre div .salon-tigre-contenedor {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 900px) {
   main .galeria .galeria-contenedor {
@@ -292,7 +357,15 @@ header .navbar {
     main .galeria .galeria-contenedor .img-4 {
       grid-row: span 1; }
   main .galeria .galeria-contenedor-2 {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  main .experiencias .columnas {
+    flex-direction: column; }
+  main .salon-belgrano div .salon-belgrano-contenedor {
+    grid-template-columns: 1fr; }
+  main .salon-palermo div .salon-palermo-contenedor {
+    grid-template-columns: 1fr; }
+  main .salon-tigre div .salon-tigre-contenedor {
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 600px) {
   header .navbar .collapse .botones-nav {
@@ -306,14 +379,14 @@ header .navbar {
     main .galeria .galeria-contenedor .img-4 {
       grid-row: span 1; }
   main .galeria .galeria-contenedor-2 {
-    grid-template-columns: 1fr; }
-  main .experiencias .columnas {
-    flex-direction: column; } }
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
   main .hero .titulos {
     padding: 20px;
     font-size: 50px; }
+  main .hero a {
+    font-size: 30px; }
   main .servicio {
     margin: 40px 0px 40px 0px; }
     main .servicio div h2 {

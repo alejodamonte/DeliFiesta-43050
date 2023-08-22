@@ -21,21 +21,21 @@ body ul{
 /*------------   TIPOGRAFIAS GENERALES   ------------*/
 .titulos-secundarios{
     font-family: 'Dancing Script', cursive;
-    font-size: $font-size-titulos-secundarios;
+    font-size: nth($font-size, 1 );
     font-weight: 700;
     color: black;
 }
 
 .titulos{
     font-family: 'Dancing Script', cursive;
-    font-size: $font-size-titulos;
+    font-size: nth($font-size, 1 );
     font-weight: 700;
     color: black;
 }
 
 .lista-servicios{
     font-family: 'Cormorant Garamond', serif;
-    font-size: $font-size-parrafos;
+    font-size: nth($font-size , 3 );
     font-weight: 400;
     padding: 20px;
     color: black;
@@ -43,7 +43,7 @@ body ul{
 
 .parrafos{
     font-family: 'Cormorant Garamond', serif;
-    font-size: $font-size-parrafos;
+    font-size: nth($font-size , 3 );
     font-weight: 500;
     font-style: italic;
     color: black;
@@ -57,7 +57,7 @@ body ul{
 
 .titulo-nav{
     font-family: 'Dancing Script', cursive ; 
-    font-size: $font-size-titulos ;
+    font-size: nth($font-size, 1 );
     font-weight: 700 ;
     span{
         color: $color-titulo;

@@ -8,9 +8,13 @@ $boton-nav-color:  #aaa498;
 
 $margen-section: 40px;
 
-$font-size-titulos: 70px;
-$font-size-titulos-secundarios: 35px;
-$font-size-parrafos: 30px; 
+$font-size: 70px, 35px, 30px;
+
+%grid-salones{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+}
 
 @mixin flex-section($display, $direction, $justify, $align, $align-item){
     background-color: $bg-color-section;
