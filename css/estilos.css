@@ -106,8 +106,10 @@ main .servicio {
     justify-content: start;
     align-content: normal;
     align-items: center; }
+    main .servicio div h2 {
+      text-align: center; }
   main .servicio .servicio-imagen img {
-    border-left: 5px black solid;
+    border-left: 3px black solid;
     width: 100%;
     height: 100%;
     object-fit: cover; }
@@ -121,6 +123,8 @@ main .destacados {
   align-content: normal;
   align-items: center;
   margin: 40px; }
+  main .destacados h2 {
+    text-align: center; }
   main .destacados .centrado {
     font-family: 'Cormorant Garamond', serif;
     font-size: 30px;
@@ -259,6 +263,12 @@ header .navbar {
     margin: 10px; }
 
 @media screen and (max-width: 1400px) {
+  main .servicio {
+    flex-direction: column; }
+    main .servicio .servicio-imagen {
+      border-top: 3px black solid;
+      border-left: 0px;
+      border-left: none; }
   main .galeria .galeria-contenedor .img-1 {
     grid-column: span 1;
     grid-row: span 1; }
@@ -285,9 +295,40 @@ header .navbar {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 600px) {
+  header .navbar .collapse .botones-nav {
+    flex-direction: column; }
+    header .navbar .collapse .botones-nav li {
+      font-size: 25px;
+      padding: 10px;
+      margin: 15px; }
   main .galeria .galeria-contenedor {
     grid-template-columns: 1fr; }
     main .galeria .galeria-contenedor .img-4 {
       grid-row: span 1; }
   main .galeria .galeria-contenedor-2 {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  main .experiencias .columnas {
+    flex-direction: column; } }
+
+@media screen and (max-width: 500px) {
+  main .hero .titulos {
+    padding: 20px;
+    font-size: 50px; }
+  main .servicio {
+    margin: 40px 0px 40px 0px; }
+    main .servicio div h2 {
+      font-size: 50px; }
+    main .servicio div p {
+      font-size: 25px; }
+    main .servicio .servicio-imagen img {
+      border-left: 0px; }
+  main .destacados {
+    margin: 40px 0px 40px 0px; }
+    main .destacados h2 {
+      font-size: 50px; }
+    main .destacados ul {
+      font-size: 25px; }
+  main .experiencias {
+    margin: 40px 0px 40px 0px; }
+    main .experiencias h2 {
+      font-size: 50px; } }
