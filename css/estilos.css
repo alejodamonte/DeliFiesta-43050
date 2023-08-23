@@ -429,7 +429,8 @@ main section .fiesta-privada-contenedor {
   justify-content: center;
   align-content: normal;
   align-items: center;
-  margin: 40px; }
+  margin: 40px;
+  margin-bottom: 30px; }
   main section .fiesta-privada-contenedor h2 {
     text-align: center; }
   main section .fiesta-privada-contenedor p {

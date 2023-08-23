@@ -74,6 +74,7 @@ main{
         }
         .fiesta-privada-contenedor{
             @include flex-section(flex,column,center,normal,center);
+            margin-bottom: 30px;
             h2{
                 text-align: center;
             }
