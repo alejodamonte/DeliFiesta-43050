@@ -162,6 +162,18 @@ main .experiencias {
         font-size: 30px;
         font-weight: 600; }
 
+main .contactos .contactos-contenedor {
+  background-color: #cdc5b4;
+  border: 3px black solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: normal;
+  align-items: center;
+  margin: 40px; }
+  main .contactos .contactos-contenedor .contactos-div {
+    text-align: center; }
+
 footer {
   border-top: 3px black solid;
   background-color: #cdc5b4;
@@ -446,7 +458,19 @@ main section .fiesta-privada-contenedor {
   main section .eventos-corporativos-contenedor .eventos-corporativos-img {
     flex-direction: column; }
   main section .fiesta-privada-contenedor .fiesta-privada-img {
-    flex-direction: column; } }
+    flex-direction: column; }
+  main .contactos .contactos-contenedor {
+    flex-direction: column; }
+    main .contactos .contactos-contenedor iframe {
+      margin: 15px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    main .contactos .contactos-contenedor .contactos-div {
+      padding: 10px;
+      text-align: center; }
+      main .contactos .contactos-contenedor .contactos-div h2 {
+        font-size: 40px; } }
 
 @media screen and (max-width: 1400px) {
   main .servicio {
