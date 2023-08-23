@@ -229,11 +229,15 @@ main .galeria {
     grid-auto-rows: 250px;
     gap: 10px;
     margin-bottom: 30px; }
-    main .galeria .galeria-contenedor div img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border: 3px black solid; }
+    main .galeria .galeria-contenedor div {
+      transition: 1s; }
+      main .galeria .galeria-contenedor div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 3px black solid; }
+      main .galeria .galeria-contenedor div:hover {
+        transform: scale(1.02); }
     main .galeria .galeria-contenedor .img-1 {
       grid-column: span 2;
       grid-row: span 2; }
@@ -248,11 +252,15 @@ main .galeria {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 250px;
     gap: 10px; }
-    main .galeria .galeria-contenedor-2 div img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border: 3px black solid; }
+    main .galeria .galeria-contenedor-2 div {
+      transition: 1s; }
+      main .galeria .galeria-contenedor-2 div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 3px black solid; }
+      main .galeria .galeria-contenedor-2 div:hover {
+        transform: scale(1.02); }
     main .galeria .galeria-contenedor-2 .img-2-1 {
       grid-row: span 2; }
     main .galeria .galeria-contenedor-2 .img-2-2 {
@@ -298,7 +306,10 @@ main .salon-belgrano {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      border: 3px black solid; }
+      border: 3px black solid;
+      transition: 1s; }
+      main .salon-belgrano div .salon-belgrano-contenedor img:hover {
+        transform: scale(1.03); }
 
 main .salon-palermo {
   background-color: #cdc5b4;
@@ -315,7 +326,10 @@ main .salon-palermo {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      border: 3px black solid; }
+      border: 3px black solid;
+      transition: 1s; }
+      main .salon-palermo div .salon-palermo-contenedor img:hover {
+        transform: scale(1.03); }
 
 main .salon-tigre {
   background-color: #cdc5b4;
@@ -332,7 +346,10 @@ main .salon-tigre {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      border: 3px black solid; }
+      border: 3px black solid;
+      transition: 1s; }
+      main .salon-tigre div .salon-tigre-contenedor img:hover {
+        transform: scale(1.03); }
 
 main section .bodas-contenedor {
   background-color: #cdc5b4;
@@ -580,4 +597,12 @@ main section .fiesta-privada-contenedor {
     main section .fiesta-privada-contenedor h2 {
       font-size: 45px; }
     main section .fiesta-privada-contenedor .fiesta-privada-img ul li {
-      font-size: 30px; } }
+      font-size: 30px; }
+  main .salon-belgrano {
+    margin: 40px 0px 40px 0px; }
+  main .salon-tigre {
+    margin: 40px 0px 40px 0px; }
+  main .salon-palermo {
+    margin: 40px 0px 40px 0px; }
+  main .contactos .contactos-contenedor {
+    margin: 40px 0px 40px 0px; } }
