@@ -1,0 +1,100 @@
+main{
+    section{
+        .bodas-contenedor{
+            @include flex-section(flex,column,center,normal,center);
+            h2{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                font-size: 35px;
+            }
+            .bodas-img{
+                @include flex(flex,row,space-around,normal,center);
+                img{
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
+                ul{
+                    margin: 0px;
+                    li{
+                        font-size: 50px;
+                    }
+                }
+            }
+        }
+        .cumpleaños-contenedor{
+            @include flex-section(flex,column,center,normal,center);
+            h2{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                font-size: 35px;
+            }
+            .cumpleaños-img{
+                @include flex(flex,row-reverse,space-around,normal,center);
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+                ul{
+                    margin: 0px;
+                    li{
+                        font-size: 50px;
+                    }
+                }
+            }
+        }
+        .eventos-corporativos-contenedor{
+            @include flex-section(flex,column,center,normal,center);
+            h2{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                font-size: 35px;
+            }
+            .eventos-corporativos-img{
+                @include flex(flex,row,space-around,normal,center);
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+                ul{
+                    margin: 0px;
+                    li{
+                        font-size: 50px;
+                    }
+                }
+            }
+        }
+        .fiesta-privada-contenedor{
+            @include flex-section(flex,column,center,normal,center);
+            h2{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                font-size: 35px;
+            }
+            .fiesta-privada-img{
+                @include flex(flex,row-reverse,space-around,normal,center);
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+                ul{
+                    margin: 0px;
+                    li{
+                        font-size: 50px;
+                    }
+                }
+            }
+        }
+    }
+}

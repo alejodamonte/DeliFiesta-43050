@@ -1,3 +1,30 @@
+@media screen and (max-width:1550px) {
+    main{
+        section{
+            .bodas-contenedor{
+                .bodas-img{
+                    flex-direction: column;
+                }
+            }
+            .cumpleaños-contenedor{
+                .cumpleaños-img{
+                    flex-direction: column;
+                }
+            }
+            .eventos-corporativos-contenedor{
+                .eventos-corporativos-img{
+                    flex-direction: column;
+                }
+            }
+            .fiesta-privada-contenedor{
+                .fiesta-privada-img{
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width:1400px) {
     main{
         .servicio{
@@ -177,6 +204,62 @@
             margin: 40px 0px 40px 0px;
             h2{
                 font-size: 50px;
+            }
+        }
+    }
+    main{
+        section{
+            .bodas-contenedor{
+                margin: 0px;
+                h2{
+                    font-size: 45px;
+                }
+                .bodas-img{
+                    ul{
+                        li{
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+            .cumpleaños-contenedor{
+                margin: 0px;
+                h2{
+                    font-size: 45px;
+                }
+                .cumpleaños-img{
+                    ul{
+                        li{
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+            .eventos-corporativos-contenedor{
+                margin: 0px;
+                h2{
+                    font-size: 45px;
+                }
+                .eventos-corporativos-img{
+                    ul{
+                        li{
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+            .fiesta-privada-contenedor{
+                margin: 0px;
+                h2{
+                    font-size: 45px;
+                }
+                .fiesta-privada-img{
+                    ul{
+                        li{
+                            font-size: 30px;
+                        }
+                    }
+                }
             }
         }
     }

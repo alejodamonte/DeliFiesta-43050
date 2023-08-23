@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*------------   Colores   ------------*/
 /*------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Dancing+Script:wght@400;500;600;700&family=Noto+Serif:ital,wght@1,400;1,500&display=swap");
@@ -321,6 +322,132 @@ main .salon-tigre {
       object-fit: cover;
       border: 3px black solid; }
 
+main section .bodas-contenedor {
+  background-color: #cdc5b4;
+  border: 3px black solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: normal;
+  align-items: center;
+  margin: 40px; }
+  main section .bodas-contenedor h2 {
+    text-align: center; }
+  main section .bodas-contenedor p {
+    text-align: center;
+    font-size: 35px; }
+  main section .bodas-contenedor .bodas-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: normal;
+    align-items: center; }
+    main section .bodas-contenedor .bodas-img img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%; }
+    main section .bodas-contenedor .bodas-img ul {
+      margin: 0px; }
+      main section .bodas-contenedor .bodas-img ul li {
+        font-size: 50px; }
+
+main section .cumpleaños-contenedor {
+  background-color: #cdc5b4;
+  border: 3px black solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: normal;
+  align-items: center;
+  margin: 40px; }
+  main section .cumpleaños-contenedor h2 {
+    text-align: center; }
+  main section .cumpleaños-contenedor p {
+    text-align: center;
+    font-size: 35px; }
+  main section .cumpleaños-contenedor .cumpleaños-img {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-content: normal;
+    align-items: center; }
+    main section .cumpleaños-contenedor .cumpleaños-img img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+    main section .cumpleaños-contenedor .cumpleaños-img ul {
+      margin: 0px; }
+      main section .cumpleaños-contenedor .cumpleaños-img ul li {
+        font-size: 50px; }
+
+main section .eventos-corporativos-contenedor {
+  background-color: #cdc5b4;
+  border: 3px black solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: normal;
+  align-items: center;
+  margin: 40px; }
+  main section .eventos-corporativos-contenedor h2 {
+    text-align: center; }
+  main section .eventos-corporativos-contenedor p {
+    text-align: center;
+    font-size: 35px; }
+  main section .eventos-corporativos-contenedor .eventos-corporativos-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: normal;
+    align-items: center; }
+    main section .eventos-corporativos-contenedor .eventos-corporativos-img img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+    main section .eventos-corporativos-contenedor .eventos-corporativos-img ul {
+      margin: 0px; }
+      main section .eventos-corporativos-contenedor .eventos-corporativos-img ul li {
+        font-size: 50px; }
+
+main section .fiesta-privada-contenedor {
+  background-color: #cdc5b4;
+  border: 3px black solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: normal;
+  align-items: center;
+  margin: 40px; }
+  main section .fiesta-privada-contenedor h2 {
+    text-align: center; }
+  main section .fiesta-privada-contenedor p {
+    text-align: center;
+    font-size: 35px; }
+  main section .fiesta-privada-contenedor .fiesta-privada-img {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-content: normal;
+    align-items: center; }
+    main section .fiesta-privada-contenedor .fiesta-privada-img img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+    main section .fiesta-privada-contenedor .fiesta-privada-img ul {
+      margin: 0px; }
+      main section .fiesta-privada-contenedor .fiesta-privada-img ul li {
+        font-size: 50px; }
+
+@media screen and (max-width: 1550px) {
+  main section .bodas-contenedor .bodas-img {
+    flex-direction: column; }
+  main section .cumpleaños-contenedor .cumpleaños-img {
+    flex-direction: column; }
+  main section .eventos-corporativos-contenedor .eventos-corporativos-img {
+    flex-direction: column; }
+  main section .fiesta-privada-contenedor .fiesta-privada-img {
+    flex-direction: column; } }
+
 @media screen and (max-width: 1400px) {
   main .servicio {
     flex-direction: column; }
@@ -404,4 +531,28 @@ main .salon-tigre {
   main .experiencias {
     margin: 40px 0px 40px 0px; }
     main .experiencias h2 {
-      font-size: 50px; } }
+      font-size: 50px; }
+  main section .bodas-contenedor {
+    margin: 0px; }
+    main section .bodas-contenedor h2 {
+      font-size: 45px; }
+    main section .bodas-contenedor .bodas-img ul li {
+      font-size: 30px; }
+  main section .cumpleaños-contenedor {
+    margin: 0px; }
+    main section .cumpleaños-contenedor h2 {
+      font-size: 45px; }
+    main section .cumpleaños-contenedor .cumpleaños-img ul li {
+      font-size: 30px; }
+  main section .eventos-corporativos-contenedor {
+    margin: 0px; }
+    main section .eventos-corporativos-contenedor h2 {
+      font-size: 45px; }
+    main section .eventos-corporativos-contenedor .eventos-corporativos-img ul li {
+      font-size: 30px; }
+  main section .fiesta-privada-contenedor {
+    margin: 0px; }
+    main section .fiesta-privada-contenedor h2 {
+      font-size: 45px; }
+    main section .fiesta-privada-contenedor .fiesta-privada-img ul li {
+      font-size: 30px; } }
