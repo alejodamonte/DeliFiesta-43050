@@ -272,16 +272,16 @@ main .galeria {
 header .navbar {
   background-color: #cdc5b4;
   border-bottom: 3px black solid; }
-  header .navbar .collapse .botones-nav .nav-item {
+  header .navbar .navbar-collapse .botones-nav .nav-item {
     background-color: #aaa498;
     font-family: 'Cormorant Garamond', serif;
     font-size: 25px;
     font-style: normal;
     font-weight: 700;
     padding: 1px 10px 1px 10px; }
-    header .navbar .collapse .botones-nav .nav-item:hover {
+    header .navbar .navbar-collapse .botones-nav .nav-item:hover {
       background-color: #D36135; }
-  header .navbar .collapse .paginas-nav {
+  header .navbar .navbar-collapse .paginas-nav {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -537,9 +537,9 @@ main section .fiesta-privada-contenedor {
     grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 600px) {
-  header .navbar .collapse .botones-nav {
+  header .navbar .navbar-collapse .paginas-nav {
     flex-direction: column; }
-    header .navbar .collapse .botones-nav li {
+    header .navbar .navbar-collapse .paginas-nav li {
       font-size: 25px;
       padding: 10px;
       margin: 15px; }

@@ -158,8 +158,8 @@
 @media screen and (max-width:600px) {
     header{
         .navbar{
-            .collapse{
-                .botones-nav{
+            .navbar-collapse{
+                .paginas-nav{
                     flex-direction: column;
                         li{
                             font-size: 25px;
