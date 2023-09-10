@@ -2,7 +2,7 @@
 /*------------   Colores   ------------*/
 /*------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Dancing+Script:wght@400;500;600;700&family=Noto+Serif:ital,wght@1,400;1,500&display=swap");
-main .salon-belgrano div .salon-belgrano-contenedor, main .salon-palermo div .salon-palermo-contenedor, main .salon-tigre div .salon-tigre-contenedor {
+main .salones .owl-carousel .item .salon-belgrano .salon-belgrano-contenedor, main .salones .owl-carousel .item .salon-palermo .salon-palermo-contenedor, main .salones .owl-carousel .item .salon-tigre .salon-tigre-contenedor {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 300px; }
@@ -27,13 +27,13 @@ body ul {
 /*------------   TIPOGRAFIAS GENERALES   ------------*/
 .titulos-secundarios {
   font-family: 'Dancing Script', cursive;
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 700;
   color: black; }
 
 .titulos {
   font-family: 'Dancing Script', cursive;
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 700;
   color: black; }
 
@@ -48,7 +48,6 @@ body ul {
   font-family: 'Cormorant Garamond', serif;
   font-size: 30px;
   font-weight: 500;
-  font-style: italic;
   color: black; }
 
 .centrado {
@@ -57,7 +56,7 @@ body ul {
 /*------------   CLASES BOOSTRAP   ------------*/
 .titulo-nav {
   font-family: 'Dancing Script', cursive;
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 700; }
   .titulo-nav span {
     color: #D36135; }
@@ -74,7 +73,7 @@ main .hero {
   border-bottom: 5px black solid;
   width: 100%;
   height: 80vh;
-  background-image: url(../img/catering.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/catering.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -85,17 +84,18 @@ main .hero {
   align-items: center; }
   main .hero .titulos {
     padding: 50px;
-    color: black; }
+    color: white; }
   main .hero a {
     font-family: 'Cormorant Garamond', serif;
     font-size: 35px;
-    font-weight: 500;
+    font-weight: 600;
     font-style: italic;
-    background-color: rgba(255, 255, 255, 0.623);
+    background-color: #cdc5b4de;
     border: 3px black solid;
-    padding: 15px; }
+    padding: 10px; }
     main .hero a:hover {
-      color: #D36135; }
+      color: black;
+      background-color: #d36235e0; }
 
 main .servicio {
   background-color: #cdc5b4;
@@ -134,31 +134,28 @@ main .destacados {
   main .destacados .centrado {
     font-family: 'Cormorant Garamond', serif;
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 600;
     padding: 20px; }
 
 main .experiencias {
   background-color: #cdc5b4;
   border: 3px black solid;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: normal;
-  align-items: normal;
   margin: 40px; }
-  main .experiencias .columnas {
-    display: flex;
-    justify-content: center; }
-    main .experiencias .columnas .columna div {
+  main .experiencias .owl-carousel {
+    background-color: #cdc5b4; }
+    main .experiencias .owl-carousel .item {
+      border: 3px black solid;
+      margin: 20px;
       padding: 20px; }
-      main .experiencias .columnas .columna div h3 {
+      main .experiencias .owl-carousel .item h3 {
+        padding: 5px;
         background-color: #9b969e;
         font-family: 'Noto Serif', serif;
         font-size: 35px;
         font-style: italic;
-        font-weight: 400; }
-      main .experiencias .columnas .columna div p {
-        font-family: 'Caveat', cursive;
+        font-weight: 600; }
+      main .experiencias .owl-carousel .item p {
+        font-family: 'Cormorant Garamond', serif;
         font-size: 30px;
         font-weight: 600; }
 
@@ -190,7 +187,7 @@ footer {
     footer div p {
       font-family: 'Cormorant Garamond', serif;
       font-size: 30px;
-      font-weight: 500;
+      font-weight: 600;
       font-style: italic;
       text-align: center; }
     footer div .redes {
@@ -288,70 +285,60 @@ header .navbar {
     align-items: end;
     margin: 10px; }
 
-main .titulos {
-  font-size: 100px; }
-
-main .salon-belgrano {
+main .salones .owl-carousel {
+  width: auto;
   background-color: #cdc5b4;
   margin: 40px;
   border: 3px black solid; }
-  main .salon-belgrano h2 {
-    text-align: center; }
-  main .salon-belgrano div p {
-    margin: 20px; }
-  main .salon-belgrano div .salon-belgrano-contenedor {
-    margin: 20px;
-    gap: 20px; }
-    main .salon-belgrano div .salon-belgrano-contenedor img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border: 3px black solid;
-      transition: 1s; }
-      main .salon-belgrano div .salon-belgrano-contenedor img:hover {
-        transform: scale(1.03); }
+  main .salones .owl-carousel .item {
+    height: 100%;
+    width: 100%; }
+    main .salones .owl-carousel .item h2 {
+      text-align: center; }
+    main .salones .owl-carousel .item .salon-belgrano p {
+      margin: 20px; }
+    main .salones .owl-carousel .item .salon-belgrano .salon-belgrano-contenedor {
+      margin: 20px;
+      gap: 20px; }
+      main .salones .owl-carousel .item .salon-belgrano .salon-belgrano-contenedor img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 3px black solid;
+        transition: 1s; }
+        main .salones .owl-carousel .item .salon-belgrano .salon-belgrano-contenedor img:hover {
+          transform: scale(1.03); }
+    main .salones .owl-carousel .item .salon-palermo p {
+      margin: 20px; }
+    main .salones .owl-carousel .item .salon-palermo .salon-palermo-contenedor {
+      margin: 20px;
+      gap: 20px; }
+      main .salones .owl-carousel .item .salon-palermo .salon-palermo-contenedor img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 3px black solid;
+        transition: 1s; }
+        main .salones .owl-carousel .item .salon-palermo .salon-palermo-contenedor img:hover {
+          transform: scale(1.03); }
+    main .salones .owl-carousel .item .salon-tigre p {
+      margin: 20px; }
+    main .salones .owl-carousel .item .salon-tigre .salon-tigre-contenedor {
+      margin: 20px;
+      gap: 20px; }
+      main .salones .owl-carousel .item .salon-tigre .salon-tigre-contenedor img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 3px black solid;
+        transition: 1s; }
+        main .salones .owl-carousel .item .salon-tigre .salon-tigre-contenedor img:hover {
+          transform: scale(1.03); }
 
-main .salon-palermo {
-  background-color: #cdc5b4;
-  margin: 40px;
-  border: 3px black solid; }
-  main .salon-palermo h2 {
-    text-align: center; }
-  main .salon-palermo div p {
-    margin: 20px; }
-  main .salon-palermo div .salon-palermo-contenedor {
-    margin: 20px;
-    gap: 20px; }
-    main .salon-palermo div .salon-palermo-contenedor img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border: 3px black solid;
-      transition: 1s; }
-      main .salon-palermo div .salon-palermo-contenedor img:hover {
-        transform: scale(1.03); }
+main .servicios-pagina .parrafos {
+  text-align: center; }
 
-main .salon-tigre {
-  background-color: #cdc5b4;
-  margin: 40px;
-  border: 3px black solid; }
-  main .salon-tigre h2 {
-    text-align: center; }
-  main .salon-tigre div p {
-    margin: 20px; }
-  main .salon-tigre div .salon-tigre-contenedor {
-    margin: 20px;
-    gap: 20px; }
-    main .salon-tigre div .salon-tigre-contenedor img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border: 3px black solid;
-      transition: 1s; }
-      main .salon-tigre div .salon-tigre-contenedor img:hover {
-        transform: scale(1.03); }
-
-main section .bodas-contenedor {
+main .servicios-pagina .bodas-contenedor {
   background-color: #cdc5b4;
   border: 3px black solid;
   display: flex;
@@ -360,27 +347,27 @@ main section .bodas-contenedor {
   align-content: normal;
   align-items: center;
   margin: 40px; }
-  main section .bodas-contenedor h2 {
+  main .servicios-pagina .bodas-contenedor h2 {
     text-align: center; }
-  main section .bodas-contenedor p {
-    text-align: center;
-    font-size: 35px; }
-  main section .bodas-contenedor .bodas-img {
+  main .servicios-pagina .bodas-contenedor .bodas-img-contenedor {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-content: normal;
     align-items: center; }
-    main section .bodas-contenedor .bodas-img img {
+    main .servicios-pagina .bodas-contenedor .bodas-img-contenedor .bodas-img img {
       object-fit: cover;
       width: 100%;
       height: 100%; }
-    main section .bodas-contenedor .bodas-img ul {
-      margin: 0px; }
-      main section .bodas-contenedor .bodas-img ul li {
-        font-size: 50px; }
+    main .servicios-pagina .bodas-contenedor .bodas-img-contenedor .lista-servicios {
+      padding: 30px; }
+      main .servicios-pagina .bodas-contenedor .bodas-img-contenedor .lista-servicios li {
+        text-align: center; }
 
-main section .cumpleaños-contenedor {
+main .servicios-pagina .cumpleaños-contenedor {
   background-color: #cdc5b4;
   border: 3px black solid;
   display: flex;
@@ -389,27 +376,27 @@ main section .cumpleaños-contenedor {
   align-content: normal;
   align-items: center;
   margin: 40px; }
-  main section .cumpleaños-contenedor h2 {
+  main .servicios-pagina .cumpleaños-contenedor h2 {
     text-align: center; }
-  main section .cumpleaños-contenedor p {
-    text-align: center;
-    font-size: 35px; }
-  main section .cumpleaños-contenedor .cumpleaños-img {
+  main .servicios-pagina .cumpleaños-contenedor .cumpleaños-img-contenedor {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
     align-content: normal;
     align-items: center; }
-    main section .cumpleaños-contenedor .cumpleaños-img img {
+    main .servicios-pagina .cumpleaños-contenedor .cumpleaños-img-contenedor .cumpleaños-img img {
       height: 100%;
       width: 100%;
       object-fit: cover; }
-    main section .cumpleaños-contenedor .cumpleaños-img ul {
-      margin: 0px; }
-      main section .cumpleaños-contenedor .cumpleaños-img ul li {
-        font-size: 50px; }
+    main .servicios-pagina .cumpleaños-contenedor .cumpleaños-img-contenedor .lista-servicios {
+      padding: 30px; }
+      main .servicios-pagina .cumpleaños-contenedor .cumpleaños-img-contenedor .lista-servicios li {
+        text-align: center; }
 
-main section .eventos-corporativos-contenedor {
+main .servicios-pagina .eventos-corporativos-contenedor {
   background-color: #cdc5b4;
   border: 3px black solid;
   display: flex;
@@ -418,27 +405,27 @@ main section .eventos-corporativos-contenedor {
   align-content: normal;
   align-items: center;
   margin: 40px; }
-  main section .eventos-corporativos-contenedor h2 {
+  main .servicios-pagina .eventos-corporativos-contenedor h2 {
     text-align: center; }
-  main section .eventos-corporativos-contenedor p {
-    text-align: center;
-    font-size: 35px; }
-  main section .eventos-corporativos-contenedor .eventos-corporativos-img {
+  main .servicios-pagina .eventos-corporativos-contenedor .eventos-corporativos-img-contenedor {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-content: normal;
     align-items: center; }
-    main section .eventos-corporativos-contenedor .eventos-corporativos-img img {
+    main .servicios-pagina .eventos-corporativos-contenedor .eventos-corporativos-img-contenedor .eventos-corporativos-img img {
       height: 100%;
       width: 100%;
       object-fit: cover; }
-    main section .eventos-corporativos-contenedor .eventos-corporativos-img ul {
-      margin: 0px; }
-      main section .eventos-corporativos-contenedor .eventos-corporativos-img ul li {
-        font-size: 50px; }
+    main .servicios-pagina .eventos-corporativos-contenedor .eventos-corporativos-img-contenedor .lista-servicios {
+      padding: 30px; }
+      main .servicios-pagina .eventos-corporativos-contenedor .eventos-corporativos-img-contenedor .lista-servicios li {
+        text-align: center; }
 
-main section .fiesta-privada-contenedor {
+main .servicios-pagina .fiesta-privada-contenedor {
   background-color: #cdc5b4;
   border: 3px black solid;
   display: flex;
@@ -448,35 +435,27 @@ main section .fiesta-privada-contenedor {
   align-items: center;
   margin: 40px;
   margin-bottom: 30px; }
-  main section .fiesta-privada-contenedor h2 {
+  main .servicios-pagina .fiesta-privada-contenedor h2 {
     text-align: center; }
-  main section .fiesta-privada-contenedor p {
-    text-align: center;
-    font-size: 35px; }
-  main section .fiesta-privada-contenedor .fiesta-privada-img {
+  main .servicios-pagina .fiesta-privada-contenedor .fiesta-privada-img-contenedor {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
     align-content: normal;
     align-items: center; }
-    main section .fiesta-privada-contenedor .fiesta-privada-img img {
+    main .servicios-pagina .fiesta-privada-contenedor .fiesta-privada-img-contenedor .fiesta-privada-img img {
       height: 100%;
       width: 100%;
       object-fit: cover; }
-    main section .fiesta-privada-contenedor .fiesta-privada-img ul {
-      margin: 0px; }
-      main section .fiesta-privada-contenedor .fiesta-privada-img ul li {
-        font-size: 50px; }
+    main .servicios-pagina .fiesta-privada-contenedor .fiesta-privada-img-contenedor .lista-servicios {
+      padding: 30px; }
+      main .servicios-pagina .fiesta-privada-contenedor .fiesta-privada-img-contenedor .lista-servicios li {
+        text-align: center; }
 
 @media screen and (max-width: 1550px) {
-  main section .bodas-contenedor .bodas-img {
-    flex-direction: column; }
-  main section .cumpleaños-contenedor .cumpleaños-img {
-    flex-direction: column; }
-  main section .eventos-corporativos-contenedor .eventos-corporativos-img {
-    flex-direction: column; }
-  main section .fiesta-privada-contenedor .fiesta-privada-img {
-    flex-direction: column; }
   main .contactos .contactos-contenedor {
     flex-direction: column; }
     main .contactos .contactos-contenedor iframe {
@@ -491,12 +470,36 @@ main section .fiesta-privada-contenedor {
         font-size: 40px; } }
 
 @media screen and (max-width: 1400px) {
+  main .hero .titulos {
+    padding: 20px;
+    font-size: 50px; }
+  main .hero a {
+    font-size: 30px; }
   main .servicio {
-    flex-direction: column; }
-    main .servicio .servicio-imagen {
-      border-top: 3px black solid;
-      border-left: 0px;
-      border-left: none; }
+    margin: 40px 0px 40px 0px; }
+    main .servicio div h2 {
+      font-size: 50px; }
+    main .servicio div p {
+      font-size: 25px;
+      padding: 15px; }
+  main .destacados {
+    margin: 40px 0px 40px 0px; }
+    main .destacados h2 {
+      font-size: 50px; }
+    main .destacados ul {
+      font-size: 25px; }
+  main .experiencias {
+    margin: 40px 0px 40px 0px; }
+    main .experiencias h2 {
+      font-size: 50px; }
+    main .experiencias .owl-carousel .item h3 {
+      font-size: 30px; }
+    main .experiencias .owl-carousel .item p {
+      font-size: 25px; }
+  main .servicios-pagina .parrafos {
+    font-size: 25px; }
+  main .servicios-pagina .lista-servicios li {
+    font-size: 30px; }
   main .galeria .galeria-contenedor .img-1 {
     grid-column: span 1;
     grid-row: span 1; }
@@ -513,30 +516,62 @@ main section .fiesta-privada-contenedor {
   main .galeria .galeria-contenedor-2 .img-2-3 {
     grid-row: span 1;
     grid-column: span 1; }
-  main .salon-belgrano div .salon-belgrano-contenedor {
+  main .titulos {
+    font-size: 50px; }
+  main .titulos-secundarios {
+    font-size: 40px; }
+  main .salones .owl-carousel .item .salon-belgrano .salon-belgrano-contenedor {
     grid-template-columns: repeat(2, 1fr); }
-  main .salon-palermo div .salon-palermo-contenedor {
+  main .salones .owl-carousel .item .salon-palermo .salon-palermo-contenedor {
     grid-template-columns: repeat(2, 1fr); }
-  main .salon-tigre div .salon-tigre-contenedor {
-    grid-template-columns: repeat(2, 1fr); } }
+  main .salones .owl-carousel .item .salon-tigre .salon-tigre-contenedor {
+    grid-template-columns: repeat(2, 1fr); }
+  footer div p {
+    font-size: 25px; } }
 
 @media screen and (max-width: 900px) {
+  main .hero {
+    height: 60vh; }
+  main .servicio {
+    flex-direction: column; }
+    main .servicio .servicio-imagen img {
+      border-left: 0px;
+      border-top: 3px black solid;
+      border-left: none; }
+  main .servicios-pagina .bodas-contenedor .bodas-img-contenedor {
+    padding: 40px;
+    flex-direction: column; }
+  main .servicios-pagina .cumpleaños-contenedor .cumpleaños-img-contenedor {
+    padding: 40px;
+    flex-direction: column; }
+  main .servicios-pagina .eventos-corporativos-contenedor .eventos-corporativos-img-contenedor {
+    padding: 40px;
+    flex-direction: column; }
+  main .servicios-pagina .fiesta-privada-contenedor .fiesta-privada-img-contenedor {
+    padding: 40px;
+    flex-direction: column; }
   main .galeria .galeria-contenedor {
     grid-template-columns: repeat(2, 1fr); }
     main .galeria .galeria-contenedor .img-4 {
       grid-row: span 1; }
   main .galeria .galeria-contenedor-2 {
     grid-template-columns: repeat(2, 1fr); }
-  main .experiencias .columnas {
-    flex-direction: column; }
-  main .salon-belgrano div .salon-belgrano-contenedor {
+  main .salones .owl-carousel .item .salon-belgrano p {
+    font-size: 25px; }
+  main .salones .owl-carousel .item .salon-belgrano .salon-belgrano-contenedor {
     grid-template-columns: 1fr; }
-  main .salon-palermo div .salon-palermo-contenedor {
+  main .salones .owl-carousel .item .salon-palermo p {
+    font-size: 25px; }
+  main .salones .owl-carousel .item .salon-palermo .salon-palermo-contenedor {
     grid-template-columns: 1fr; }
-  main .salon-tigre div .salon-tigre-contenedor {
+  main .salones .owl-carousel .item .salon-tigre p {
+    font-size: 25px; }
+  main .salones .owl-carousel .item .salon-tigre .salon-tigre-contenedor {
     grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 600px) {
+  header .navbar .container-fluid .titulo-nav {
+    font-size: 45px; }
   header .navbar .navbar-collapse .paginas-nav {
     flex-direction: column; }
     header .navbar .navbar-collapse .paginas-nav li {
@@ -551,58 +586,51 @@ main section .fiesta-privada-contenedor {
     grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
-  main .hero .titulos {
-    padding: 20px;
-    font-size: 50px; }
-  main .hero a {
-    font-size: 30px; }
-  main .servicio {
-    margin: 40px 0px 40px 0px; }
-    main .servicio div h2 {
-      font-size: 50px; }
-    main .servicio div p {
-      font-size: 25px; }
-    main .servicio .servicio-imagen img {
-      border-left: 0px; }
-  main .destacados {
-    margin: 40px 0px 40px 0px; }
-    main .destacados h2 {
-      font-size: 50px; }
-    main .destacados ul {
-      font-size: 25px; }
-  main .experiencias {
-    margin: 40px 0px 40px 0px; }
-    main .experiencias h2 {
-      font-size: 50px; }
-  main section .bodas-contenedor {
-    margin: 0px; }
-    main section .bodas-contenedor h2 {
+  main .servicios-pagina .parrafos {
+    padding: 25px; }
+  main .servicios-pagina .bodas-contenedor {
+    margin: 0px 0px 20px 0px; }
+    main .servicios-pagina .bodas-contenedor h2 {
       font-size: 45px; }
-    main section .bodas-contenedor .bodas-img ul li {
-      font-size: 30px; }
-  main section .cumpleaños-contenedor {
-    margin: 0px; }
-    main section .cumpleaños-contenedor h2 {
+    main .servicios-pagina .bodas-contenedor .bodas-img-contenedor {
+      padding: 20px; }
+      main .servicios-pagina .bodas-contenedor .bodas-img-contenedor .lista-servicios {
+        padding: 5px; }
+        main .servicios-pagina .bodas-contenedor .bodas-img-contenedor .lista-servicios li {
+          font-size: 25px; }
+  main .servicios-pagina .cumpleaños-contenedor {
+    margin: 0px 0px 20px 0px; }
+    main .servicios-pagina .cumpleaños-contenedor h2 {
       font-size: 45px; }
-    main section .cumpleaños-contenedor .cumpleaños-img ul li {
-      font-size: 30px; }
-  main section .eventos-corporativos-contenedor {
-    margin: 0px; }
-    main section .eventos-corporativos-contenedor h2 {
+    main .servicios-pagina .cumpleaños-contenedor .cumpleaños-img-contenedor {
+      padding: 20px; }
+      main .servicios-pagina .cumpleaños-contenedor .cumpleaños-img-contenedor .lista-servicios {
+        padding: 5px; }
+        main .servicios-pagina .cumpleaños-contenedor .cumpleaños-img-contenedor .lista-servicios li {
+          font-size: 25px; }
+  main .servicios-pagina .eventos-corporativos-contenedor {
+    margin: 0px 0px 20px 0px; }
+    main .servicios-pagina .eventos-corporativos-contenedor h2 {
       font-size: 45px; }
-    main section .eventos-corporativos-contenedor .eventos-corporativos-img ul li {
-      font-size: 30px; }
-  main section .fiesta-privada-contenedor {
-    margin: 0px 0px 30px 0px; }
-    main section .fiesta-privada-contenedor h2 {
+    main .servicios-pagina .eventos-corporativos-contenedor .eventos-corporativos-img-contenedor {
+      padding: 20px; }
+      main .servicios-pagina .eventos-corporativos-contenedor .eventos-corporativos-img-contenedor .lista-servicios {
+        padding: 5px; }
+        main .servicios-pagina .eventos-corporativos-contenedor .eventos-corporativos-img-contenedor .lista-servicios li {
+          font-size: 25px; }
+  main .servicios-pagina .fiesta-privada-contenedor {
+    margin: 0px 0px 20px 0px; }
+    main .servicios-pagina .fiesta-privada-contenedor h2 {
       font-size: 45px; }
-    main section .fiesta-privada-contenedor .fiesta-privada-img ul li {
-      font-size: 30px; }
-  main .salon-belgrano {
-    margin: 40px 0px 40px 0px; }
-  main .salon-tigre {
-    margin: 40px 0px 40px 0px; }
-  main .salon-palermo {
-    margin: 40px 0px 40px 0px; }
+    main .servicios-pagina .fiesta-privada-contenedor .fiesta-privada-img-contenedor {
+      padding: 20px; }
+      main .servicios-pagina .fiesta-privada-contenedor .fiesta-privada-img-contenedor .lista-servicios {
+        padding: 5px; }
+        main .servicios-pagina .fiesta-privada-contenedor .fiesta-privada-img-contenedor .lista-servicios li {
+          font-size: 25px; }
+  main .salones .owl-carousel {
+    margin: 20px 0px 20px 0px; }
   main .contactos .contactos-contenedor {
-    margin: 40px 0px 40px 0px; } }
+    margin: 40px 0px 40px 0px; }
+  footer div p {
+    font-size: 20px; } }

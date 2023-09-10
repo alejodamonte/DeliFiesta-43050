@@ -1,27 +1,31 @@
 main{
-    section{
+    .servicios-pagina{
+        .parrafos{
+            text-align: center;
+        }
         .bodas-contenedor{
             @include flex-section(flex,column,center,normal,center);
             h2{
                 text-align: center;
             }
-            p{
-                text-align: center;
-                font-size: 35px;
-            }
-            .bodas-img{
+            .bodas-img-contenedor{
+                height: 100%;
+                width: 100%;
+                margin-bottom: 40px;
                 @include flex(flex,row,space-around,normal,center);
-                img{
-                    object-fit: cover;
-                    width: 100%;
-                    height: 100%;
-                }
-                ul{
-                    margin: 0px;
-                    li{
-                        font-size: 50px;
+                .bodas-img{
+                    img{
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
                     }
                 }
+                    .lista-servicios{
+                        padding: 30px;
+                        li{
+                            text-align: center;
+                        }
+                    }
             }
         }
         .cumpleaños-contenedor{
@@ -29,21 +33,22 @@ main{
             h2{
                 text-align: center;
             }
-            p{
-                text-align: center;
-                font-size: 35px;
-            }
-            .cumpleaños-img{
+            .cumpleaños-img-contenedor{
+                height: 100%;
+                width: 100%;
+                margin-bottom: 40px;
                 @include flex(flex,row-reverse,space-around,normal,center);
-                img{
-                    height: 100%;
-                    width: 100%;
-                    object-fit: cover;
+                .cumpleaños-img{
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
                 }
-                ul{
-                    margin: 0px;
+                .lista-servicios{
+                    padding: 30px;
                     li{
-                        font-size: 50px;
+                        text-align: center;
                     }
                 }
             }
@@ -53,21 +58,22 @@ main{
             h2{
                 text-align: center;
             }
-            p{
-                text-align: center;
-                font-size: 35px;
-            }
-            .eventos-corporativos-img{
+            .eventos-corporativos-img-contenedor{
+                height: 100%;
+                width: 100%;
+                margin-bottom: 40px;
                 @include flex(flex,row,space-around,normal,center);
-                img{
-                    height: 100%;
-                    width: 100%;
-                    object-fit: cover;
+                .eventos-corporativos-img{
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
                 }
-                ul{
-                    margin: 0px;
+                .lista-servicios{
+                    padding: 30px;
                     li{
-                        font-size: 50px;
+                        text-align: center;
                     }
                 }
             }
@@ -78,21 +84,22 @@ main{
             h2{
                 text-align: center;
             }
-            p{
-                text-align: center;
-                font-size: 35px;
-            }
-            .fiesta-privada-img{
+            .fiesta-privada-img-contenedor{
+                width: 100%;
+                height: 100%;
+                margin-bottom: 40px;
                 @include flex(flex,row-reverse,space-around,normal,center);
-                img{
-                    height: 100%;
-                    width: 100%;
-                    object-fit: cover;
+                .fiesta-privada-img{
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
                 }
-                ul{
-                    margin: 0px;
+                .lista-servicios{
+                    padding: 30px;
                     li{
-                        font-size: 50px;
+                        text-align: center;
                     }
                 }
             }
